@@ -69,5 +69,5 @@ console.log("2" + 1);
 console.log(+"2"+1);
 
 // El usuario ingrese un valor a una variable se hacer mediante el prompt
-let apellido = prompt("Ingrese su apellido")
+let apellido = prompt("Ingrese su apellido");
 console.log(apellido)
