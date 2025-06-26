@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+}
+
+.herramientas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.seccion {
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.seccion h2 {
+    margin-top: 0;
+    color: #007bff;
+    font-size: 1.2em;
+}
+
+input[type="text"], button {
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: calc(100% - 24px); /* Ajuste para padding */
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.contenedor-caja {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.caja {
+    width: 250px;
+    height: 150px;
+    background-color: #ffcccb;
+    border: 2px solid #dc3545;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #dc3545;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    text-align: center;
+    padding: 10px;
+}
+
+.caja.borde-grueso {
+    border: 5px solid #28a745;
+}
+
+.caja.resaltado {
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
+    transform: scale(1.05);
+}
+
+.lista-dinamica {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    min-width: 200px;
+    list-style-type: disc;
+}
+
+.lista-dinamica li {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px dashed #eee;
+}
+
+.lista-dinamica li:last-child {
+    border-bottom: none;
+}

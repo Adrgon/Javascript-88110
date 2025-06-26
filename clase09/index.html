@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Herramientas Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+
+<body>
+    <h1>Mi Caja de Herramientas DOM</h1>
+
+    <div class="herramientas">
+        <div class="seccion">
+            <h2>Contenido y Estilo</h2>
+            <input type="text" id="textoInput" placeholder="Cambiar texto de la caja">
+            <button id="btnCambiarTexto">Cambiar Texto</button>
+            <button id="btnColorFondo">Color Fondo Aleatorio</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Clases CSS</h2>
+            <button id="btnAlternarBorde">Alternar Borde</button>
+            <button id="btnResaltar">Resaltar</button>
+            <button id="btnNormal">Normal</button>
+        </div>
+
+        <div class="seccion">
+            <h2>Crear y Eliminar</h2>
+            <input type="text" id="nuevoItemInput" placeholder="Nuevo item de lista">
+            <button id="btnAgregarItem">Agregar a Lista</button>
+            <button id="btnEliminarUltimo">Eliminar Último Item</button>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="contenedor-caja">
+        <div id="miCaja" class="caja" >
+            <p id="cajaTexto">¡Hola, soy la caja!</p>
+        </div>
+        <ul id="miLista" class="lista-dinamica">
+            <li>Item inicial 1</li>
+            <li>Item inicial 2</li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
