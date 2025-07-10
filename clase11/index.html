@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- estilo personalizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- estilos de las librerias -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- funcionalidades de las librerias -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js" defer></script>
+    <!-- funcionalidades personalizada -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mi Tienda Online</h1>
+        <button id="view-cart-btn">Ver Carrito (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main>
+        <section id="product-catalog">
+            <h2>Nuestros Productos</h2>
+            <div id="product-list">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mi Tienda Online</p>
+    </footer>
+</body>
+</html>
