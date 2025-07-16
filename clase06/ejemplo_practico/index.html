@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Productos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #0056b3;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        pre {
+            background-color: #e2e2e2;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            /* Permite que el texto se ajuste */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Gestión de Productos</h1>
+
+    <p>Abre la **consola del navegador** (F12 o Ctrl+Shift+I) para ver los resultados de las operaciones y las
+        interacciones con `prompt()` y `alert()`.</p>
+
+    <h2>Funcionalidades:</h2>
+    <button onclick="buscarProducto()">Buscar Producto por ID</button>
+    <button onclick="filtrarProductosPorNombre()">Filtrar Productos por Nombre</button>
+    <button onclick="filtrarProductosPorPrecioMax()">Filtrar Productos por Precio Máximo</button>
+    <button onclick="actualizarPreciosConIVA()">Actualizar Precios con IVA (21%)</button>
+    <button onclick="mostrarProductosOriginales()">Mostrar Productos Originales</button>
+    <button onclick="mostrarProductosActualizados()">Mostrar Últimos Productos Actualizados</button>
+
+
+    <h2>Estado Actual de Productos:</h2>
+    <pre id="productosOriginales"></pre>
+
+    <script src="miarchivo.js"></script>
+    <script>
+        // Muestra los productos originales al cargar la página
+        document.getElementById('productosOriginales').textContent = JSON.stringify(productos, null, 2);
+    </script>
+</body>
+
+</html>
