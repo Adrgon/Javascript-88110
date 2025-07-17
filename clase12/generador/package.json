@@ -1,0 +1,24 @@
+{
+  "name": "generador",
+  "version": "0.0.1",
+  "description": "\"Este es mi primer proyecto nodejs para generar sitios web por medio de un boilerplate\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node index.js",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "boilerplate",
+    "sitios",
+    "generador"
+  ],
+  "author": "Adrian L Gonzalez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0",
+    "luxon": "^3.7.1",
+    "random-quotes": "^1.3.0",
+    "sweetalert2": "^11.22.2"
+  }
+}
